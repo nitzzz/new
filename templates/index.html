@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook Post Status</title>
+    </head>
+    <body>
+    </body>
+
+      <b> Enter Facebook Status to be Updated : </b>
+        <form action="/" method="post">
+            <input type="text" name="expression" /> 
+            <input type="submit" value="Submit" />
+        </form>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                Results:
+                <pre>
+                    {% for message in messages %}
+{{ message }}
+                    {% endfor %}
+                </pre>
+            {% endif %}
+        {% endwith %}
+    </body>
+</html>
