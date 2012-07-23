@@ -1,0 +1,19 @@
+Install Following :
+
+1 . fbconsole
+fbconsole is a small facebook api client for use in python scripts.
+
+You can install fbconsole using pip:
+
+pip install fbconsole
+
+2. Flask Framework
+
+pip install Flask
+
+
+Then Run demo.py file using
+$ python demo.py
+
+It will first authenticate using facebook app nitzzz created by me then you can go to URL : http://127.0.0.1:5000 i.e Localhost .
+After Entering status and submitting , Status will be updated on Facebook .

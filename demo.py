@@ -4,7 +4,7 @@ app = flask.Flask(__name__)
 # Don't do this!
 app.secret_key = "nitish"
 fbconsole.AUTH_SCOPE = ['publish_stream', 'publish_checkins']
-fbconsole.APP_ID = '266828850095076'
+#fbconsole.APP_ID = '266828850095076'
 fbconsole.authenticate()
 class View(flask.views.MethodView):
     def get(self):
