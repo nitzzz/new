@@ -1,26 +1,34 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <html>
-    <head>
-        <title>Facebook Post Status</title>
-    </head>
-    <body>
-    </body>
+<head>
+  <title>Facebook Status Update</title>
+  <meta name="GENERATOR" content="Evrsoft First Page">
+</head>
 
-      <b> Enter Facebook Status to be Updated : </b>
-        <form action="/" method="post">
-            <input type="text" name="expression" /> 
-            <input type="submit" value="Submit" />
-        </form>
+<body alink="#99CCFF" link="#DDDDDD" bgcolor="#003366" text="#FFFFFF" vlink="#CCCCCC">
+  <img style="WIDTH: 93px; HEIGHT: 88px" border="0" src="facebook_logo.jpg" width="90" height="90">
 
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                Results:
-                <pre>
+  <div align="center">
+    <p align="left">&nbsp;</p>
+
+    <p align="left"><b>Enter Facebook Status to be Updated&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></p>
+    <form action="/" method="post">
+            <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input style="WIDTH: 649px; HEIGHT: 81px" size="1" name="expression"></p>
+			<p align="center"><input value="Submit" type="submit"></p>
+
+    <p>&nbsp;</p>
+     </form>
+    
+
+    <p><b>Facebook Status Updated is :</b><br>
+    {% with messages = get_flashed_messages() %} {% if messages %} </p>
+    <pre>
                     {% for message in messages %}
 {{ message }}
                     {% endfor %}
-                </pre>
-            {% endif %}
-        {% endwith %}
-    </body>
+                
+</pre>{% endif %} {% endwith %}
+  </div>
+</body>
 </html>
